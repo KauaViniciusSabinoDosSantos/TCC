@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './App.css'
 import Home from '../Home/Home'
+import EntradaInicial from '../EntradaInicial/EntradaInicial'
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-     <Home/>
+     <EntradaInicial/>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import Forgotpass from '../templates/Forgotpass/Forgotpass'
 import Cadastro from '../templates/Cadastro/Cadastro'
 import Inicio from '../templates/Inicio/Inicio'
 import Agendamento from '../templates/Agendamento/Agendamento'
+import EntradaInicial from '../templates/EntradaInicial/EntradaInicial'
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
         <Route path="/cadastro" element={<Cadastro/>} />
         <Route path="/inicio" element={<Inicio/>} />
         <Route path="/agendamento" element={<Agendamento/>} /> 
+        <Route path="/entradainicial" element={<EntradaInicial/>} /> 
       </Routes>
     </div>
   )

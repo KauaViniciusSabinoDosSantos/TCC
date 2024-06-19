@@ -1,36 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container1{
+  background: url('../../assets/background2.jpg') no-repeat center center/cover;
+}
+
+.containerH {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.containerF {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
 .container {
-    font-family: Arial, sans-serif;
-  }
-  
-  .menuNav {
-    background-color: red;
-    padding: 10px 0;
-  }
-  
-  .menu {
-    background-color: black;
-    list-style-type: none;
-    padding: 10px;
-    margin: 0;
-  }
-  
-  .menu li {
-    background-color: black;
-    margin: 0 15px;
-  }
-  
-  .menu li a {
-    padding: 10px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .menu li a:hover {
-    text-decoration: underline;
-  }
-  
-  .content {
-    margin-top: 50px;
-  }
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+header {
+  background: #4a2c72;
+  color: #fff;
+  padding: 10px;
+}
+
+header .logo {
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav {
+  float: left;
+}
+
+header nav ul {
+  padding: 10px;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 30px;
+  display: inline;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+header nav ul li:hover{
+  background-color: #7c48be;
+  padding: 30px;
+  transition: 0.5s;
+  text-align: center;
+
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.hero {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .container {
+  max-width: 600px;
+}
+
+.hero h2 {
+  padding: 10px;
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background: #6c40a5;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.hero .btn:hover{
+  background-color: #4A2C72;
+  transition: 0.5s;
+}
+
+footer {
+  background: #4A2C72;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}

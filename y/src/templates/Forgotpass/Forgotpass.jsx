@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 
 const EsqueceuSenha = () => {
   return (
-    <div>
+    <div className='teste'>
       <div className="caixa">
       <form action="">
         <h1>ESQUECEU A SENHA</h1>
@@ -22,7 +22,7 @@ const EsqueceuSenha = () => {
         <div className='esqueceu-senha'>
             <Link to={'/login'}>Voltar</Link>
         </div>
-       <Link to={'/home'} className="btn-login">CONTINUAR</Link>
+       <Link to={'/login'} className="btn-continuar">CONTINUAR</Link>
       </form>
       </div>
     </div>

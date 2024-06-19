@@ -5,12 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+.teste{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../../assets/fundo1.jpg');
+    background: url('../../assets/fundo.jpeg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -18,7 +18,7 @@ body{
 
 .caixa{
     width: 420px;
-    color: black; 
+    color: white; 
     background-color: white;   
     padding: 30px;
     border-radius: 10px;
@@ -27,6 +27,7 @@ body{
 }
 
 .caixa h1{
+    color: #331d4e;
     font-size: 36px;
     text-align: center;
 }
@@ -44,7 +45,7 @@ body{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid black;
+    border: 2px solid #4d2d77;
     border-radius: 40px;
     font-size: 16px;
     color: black;
@@ -68,7 +69,7 @@ body{
 }
 
 .esqueceu-senha a{
-    background-color: black;
+    background-color: #6C40A5;
     border-radius: 30px;
     color: white;
     margin-bottom: 5px;
@@ -78,25 +79,26 @@ body{
 
 .esqueceu-senha a:hover{
     text-decoration: none;
-    background-color: #8e239c;
+    background-color: #4A2C72;
     transition: 0.5s;
     color: white;
 }
 
-.caixa .btn-login{
+.caixa .btn-continuar{
+    display: block;
     width: 100%;
     height: 45px;
     padding: 10px 90px;
+    text-align: center;
     text-decoration: none;
-    background-color: black;
+    background-color: #6C40A5;
     border-radius: 30px;
-    border: 1px solid black;
     color: white;
     font-size: 20px;
 }
 
-.caixa .btn-login:hover{
-    background-color: #8e239c;
+.caixa .btn-continuar:hover{
+    background-color: #4A2C72;
     transition: 0.5s;
     color: white;
 }

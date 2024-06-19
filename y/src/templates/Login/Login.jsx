@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 const Login = () => {
   return (
-    <div>
+    <div className='corpo-login'>
       <div className="caixa">
       <form action="">
         <h1>Login</h1>
@@ -19,9 +19,6 @@ const Login = () => {
             <Link to={'/forgotpass'}>Esqueceu a senha?</Link>
         </div>
        <Link to={'/home'} className="btn-login">LOGIN</Link>
-       <div className="register-link">
-             <p>Nao possui uma conta? <Link to={'/cadastro'}>Cadastre-se</Link></p>
-       </div>
       </form>
       </div>
     </div>
