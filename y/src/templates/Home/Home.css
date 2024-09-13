@@ -5,70 +5,83 @@
   font-family: Arial, sans-serif;
 }
 
+
 .container1{
-  background: url('../../assets/background2.jpg') no-repeat center center/cover;
+  background-color: black;
+  background: url('../../assets/roxo.jpg');
 }
 
-.containerH {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
+
+
 
 .containerF {
   width: 100%;
   margin: auto;
   overflow: hidden;
+  
 }
 
+
 .container {
+  background-color: #27173b33;
   width: 100%;
   margin: auto;
   padding: 20px;
   overflow: hidden;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px    #623a97, 0 0 20px #623a97, 0 0 28px #623a97;
 }
+
 
 header {
-  background: #4a2c72;
+  background: rgb(17, 17, 17);
   color: #fff;
-  padding: 10px;
+  padding: 0px;
 }
 
-header .logo {
+
+.logo {
   float: left;
-  font-size: 1.5rem;
+  width: 150px;
   font-weight: bold;
 }
+
 
 header nav {
   float: left;
 }
+
 
 header nav ul {
   padding: 10px;
   list-style: none;
 }
 
-header nav ul li {
-  padding: 30px;
-  display: inline;
-  margin-left: 20px;
+
+.btn-v {
+  color: #bdafcf;
+  padding: 8px;
+  flex-direction: row;
+  display: flex;
+  margin: 0;
   font-size: 30px;
 }
 
-header nav ul li:hover{
-  background-color: #7c48be;
-  padding: 30px;
+
+.btn-v:hover{
+  color: white;
   transition: 0.5s;
-  text-align: center;
 
 }
+
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 30px;
 }
+
 
 .hero {
   color: #fff;
@@ -78,33 +91,53 @@ header nav ul li a {
   text-align: center;
 }
 
+
 .hero .container {
+  height: 80%;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 600px;
+  
 }
+
 
 .hero h2 {
-  padding: 10px;
-  font-size: 64px;
-  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 50px;
 }
 
+
 .hero p {
-  font-size: 20px;
+  padding: 5px;
+  font-size: 19px;
   margin-bottom: 2rem;
 }
 
+
 .hero .btn {
-  background: #6c40a5;
-  color: #fff;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: 5px;
+     position: relative;
+     display: inline-block;
+     padding: 15px 40px;
+     color: #fff;
+     letter-spacing: 4px;
+     font-size: 24px;
+     text-decoration: none;
+     overflow: hidden;
+     transition: 0.2s;
+     background: #623a97;
+     border-radius: 50px;
+     margin: 20px;
 }
-.hero .btn:hover{
-  background-color: #4A2C72;
-  transition: 0.5s;
+
+
+.btn:hover{
+  background: #482b6e;
+  box-shadow: 0 0 10px    #623a97, 0 0 20px #623a97, 0 0 28px #623a97;
+  transition-delay: 0.1s;
 }
+
 
 footer {
   background: #4A2C72;
@@ -113,3 +146,4 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+

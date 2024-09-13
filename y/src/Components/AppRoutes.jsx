@@ -6,7 +6,7 @@ import Login from '../templates/Login/Login'
 import Forgotpass from '../templates/Forgotpass/Forgotpass'
 import Cadastro from '../templates/Cadastro/Cadastro'
 import Inicio from '../templates/Inicio/Inicio'
-import Agendamento from '../templates/Agendamento/Agendamento'
+import Interditar from '../templates/Interditar/Interditar'
 import EntradaInicial from '../templates/EntradaInicial/EntradaInicial'
 
 const AppRoutes = () => {
@@ -19,7 +19,7 @@ const AppRoutes = () => {
         <Route path="/forgotpass" element={<Forgotpass/>} />
         <Route path="/cadastro" element={<Cadastro/>} />
         <Route path="/inicio" element={<Inicio/>} />
-        <Route path="/agendamento" element={<Agendamento/>} /> 
+        <Route path="/interditar" element={<Interditar/>} /> 
         <Route path="/entradainicial" element={<EntradaInicial/>} /> 
       </Routes>
     </div>

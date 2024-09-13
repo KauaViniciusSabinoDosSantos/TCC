@@ -5,21 +5,21 @@ import {Link} from "react-router-dom"
 
 const EsqueceuSenha = () => {
   return (
-    <div className='teste'>
-      <div className="caixa">
+    <div className='corpo-forgotpass'>
+      <div className="caixa-F">
       <form action="">
-        <h1>ESQUECEU A SENHA</h1>
-        <div className='input-box'>
+        <h1 className='h1-F'>ESQUECEU A SENHA</h1>
+        <div className='input-box-F'>
            <input type="email" placeholder='Email' required />
         </div>
-        <div className='input-box'>
+        <div className='input-box-F'>
            <input type="password" placeholder='Nova senha' required />
         </div>
-        <div className='input-box'>
+        <div className='input-box-F'>
            <input type="password" placeholder='Repita a senha' required />
         </div>
         
-        <div className='esqueceu-senha'>
+        <div className='esqueceu-senha-F'>
             <Link to={'/login'}>Voltar</Link>
         </div>
        <Link to={'/login'} className="btn-continuar">CONTINUAR</Link>

@@ -19,12 +19,13 @@
     align-items: center;
 }
 .left {
-    background-color: #4A2C72;
-    border-top-right-radius: 300px 50%;
-    border-bottom-right-radius:320px 50%;
+    background-color: #210535;
+    border-top-right-radius: 0px 50%;
+    border-bottom-right-radius: 0px 50%;
 }
 .right {
-    background:url('../../assets/fundo.jpeg');
+    background: url('../../assets/roxo.jpg');
+    box-shadow: 0 0 10px    #623a97, 0 0 20px #623a97, 0 0 28px #623a97;
     color: white;
 }
 
@@ -68,6 +69,11 @@
 
 .Txt-2{
     text-align: right;
+    padding: 30px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px    #623a97, 0 0 20px #623a97, 0 0 28px #623a97;
 }
 
 .Logo{

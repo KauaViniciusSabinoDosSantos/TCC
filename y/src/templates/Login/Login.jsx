@@ -7,7 +7,7 @@ const Login = () => {
     <div className='corpo-login'>
       <div className="caixa">
       <form action="">
-        <h1>Login</h1>
+        <h1 className='h1-L'>Login</h1>
         <div className='input-box'>
            <input type="email" placeholder='Email' required />
         </div>
@@ -15,10 +15,10 @@ const Login = () => {
            <input type="password" placeholder='Senha' required />
         </div>
         
-        <div className='esqueceu-senha'>
+        <div className='esqueceu-senha-L'>
             <Link to={'/forgotpass'}>Esqueceu a senha?</Link>
         </div>
-       <Link to={'/home'} className="btn-login">LOGIN</Link>
+       <Link to={'/home'} className="btn-login">ENTRAR</Link>
       </form>
       </div>
     </div>
