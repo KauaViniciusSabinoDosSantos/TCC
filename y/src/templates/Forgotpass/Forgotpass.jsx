@@ -1,11 +1,15 @@
 import React from 'react'
 import './Forgotpass.css'
 import {Link} from "react-router-dom"
+import Logo from '../../assets/logo.png' 
 
 
 const EsqueceuSenha = () => {
   return (
     <div className='corpo-forgotpass'>
+
+      <img src={Logo} alt="" className="logo-esqueceu" />
+
       <div className="caixa-F">
       <form action="">
         <h1 className='h1-F'>ESQUECEU A SENHA</h1>

@@ -6,7 +6,7 @@ const Cadastro = () => {
     return (
         <div>
             <div className="caixa">
-                <form action="">
+                <form action="  ">
                     <h1>Cadastro</h1>
                     <div className='input-box'>
                         <input type="email" placeholder='Email' required />

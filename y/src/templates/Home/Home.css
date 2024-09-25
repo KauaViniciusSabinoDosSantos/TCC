@@ -139,11 +139,11 @@ header nav ul li a {
 }
 
 
-footer {
-  background: #4A2C72;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+@media screen and (max-width: 640px) {
+  .container{
+    padding: 1rem 2rem;
+  }
 }
+
+
 

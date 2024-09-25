@@ -9,7 +9,6 @@ const Inicio = () => {
        <nav>
         <ul className="menu">
         <li><Link to={'/login'}>Login</Link></li>
-        <li><Link to={'/cadastro'}>Cadastre-se</Link></li>
         </ul>
       </nav>
       <div className="texto1">

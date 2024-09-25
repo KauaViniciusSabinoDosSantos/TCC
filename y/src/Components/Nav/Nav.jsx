@@ -16,9 +16,8 @@ const Nav = () => {
 
               <div className="nav-list">
                 <ul>
-                  <li className="nav-item"><Link to={'/interditar'} className="nav-link">AGENDAR</Link></li>
-                  <li className="nav-item"><Link to={'/interditar'} className="nav-link">SOBRE NOS</Link></li>
-                  <li className="nav-item"><Link to={'/interditar'} className="nav-link">INICIO</Link></li>
+                  <li className="nav-item"><Link to={'/interditar'} className="nav-link">INTERDITAR</Link></li>
+                  <li className="nav-item"><Link to={'/sobrenos'} className="nav-link">SOBRE NOS</Link></li>
                 </ul>
               </div>
             </nav>

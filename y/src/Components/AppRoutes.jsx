@@ -9,6 +9,7 @@ import Inicio from '../templates/Inicio/Inicio'
 import Interditar from '../templates/Interditar/Interditar'
 import EntradaInicial from '../templates/EntradaInicial/EntradaInicial'
 
+
 const AppRoutes = () => {
   return (
     <div>
@@ -20,7 +21,9 @@ const AppRoutes = () => {
         <Route path="/cadastro" element={<Cadastro/>} />
         <Route path="/inicio" element={<Inicio/>} />
         <Route path="/interditar" element={<Interditar/>} /> 
-        <Route path="/entradainicial" element={<EntradaInicial/>} /> 
+        <Route path="/entradainicial" element={<EntradaInicial/>} />
+
+
       </Routes>
     </div>
   )

@@ -7,20 +7,30 @@ const EntradaInicial = () => {
   return (
 
     <div className='content'>
-      <div className="side center left">
-                <div className='Txt-1'>
-                    <h2>BEM VINDO(a) <br />ADMIN</h2>
+     <header className="container-header">
+            <nav className="navbar-E">
+              <div className="logo-E">
+               <img src={Logo} alt="" className="logostyle-E"/>
+              </div>
+
+              <div className="navlist-E">
+                <ul>
+                  <li className="nav-item"><Link to={'/interditar'} className="navlink-E">INTERDITAR</Link></li>
+                  <li className="nav-item"><Link to={'/sobrenos'} className="navlink-E">SOBRE NOS</Link></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+ 
+          <div className="container-body">
+          <h1>Bem Vindo,  Adm!</h1>
                     <Link to={'/login'} className="btn-login">LOGIN</Link>
-                </div>
-            </div>
-            <div className="side center right">
-                <div className='Txt-2'>
-                    <h1>IRON WORKS</h1>
-                    <p>
-                    Iron Works Gym, aplicativo e um website de acordo <br /> com a preferencia do usuário, onde especializados <br /> podem monitorar o agendamento dos funcionamentos <br /> das maquinas especializadas para aqueles que querem <br /> ter um físico forte e ter uma organização boa
-                    </p>
-                </div>
-            </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur temporibus, similique ducimus dicta officiis odio harum suscipit at fuga ab obcaecati recusandae sapiente vel expedita possimus ullam libero praesentium.</p>
+           
+
+
+          </div>
+
     </div>
   )
 }

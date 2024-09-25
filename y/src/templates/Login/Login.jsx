@@ -1,10 +1,16 @@
 import React from 'react'
 import './Login.css'
+import Logo from '../../assets/logo.png'  
 import {Link} from "react-router-dom"
 
 const Login = () => {
   return (
-    <div className='corpo-login'>
+    <div>
+  
+    <div className='corpo-login'> 
+
+    <img src={Logo} alt="" className="logo-login" />
+    
       <div className="caixa">
       <form action="">
         <h1 className='h1-L'>Login</h1>
@@ -21,6 +27,7 @@ const Login = () => {
        <Link to={'/home'} className="btn-login">ENTRAR</Link>
       </form>
       </div>
+    </div>
     </div>
   )
 }
