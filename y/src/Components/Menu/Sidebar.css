@@ -2,22 +2,21 @@
     width: 200px;
     height: 100vh;
     background-color: rgb(37, 2, 48);
-    border: solid white 1px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .sidebar a{
+    color: white;
     padding: 20px 10px;
   }
   
   .sidebar a:hover {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
-    border: solid rgb(68, 0, 255) 1px;
     background-color: rgb(206, 199, 250);
-    border-radius: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
     text-align: center;
-    margin: 2px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 

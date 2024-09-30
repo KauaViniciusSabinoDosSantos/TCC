@@ -8,6 +8,13 @@ import Inicio from '../templates/Inicio/Inicio'
 import EntradaInicial from '../templates/EntradaInicial/EntradaInicial'
 import Usuario from '../templates/Usuario/Usuario'
 import Mensagem from '../templates/Mensagem/Mensagem'
+import Produto from '../templates/Produto/Produto'
+import ProdutoNovo from '../templates/Produto/ProdutoNovo'
+import ProdutoLista from '../templates/Produto/ProdutoLista'
+import UsuarioEditar from '../templates/Usuario/UsuarioEditar'
+import UsuarioNovo from '../templates/Usuario/UsuarioNovo'
+
+
 
 
 
@@ -22,8 +29,14 @@ const AppRoutes = () => {
         <Route path="/inicio" element={<Inicio/>} />
         <Route path="/entradainicial" element={<EntradaInicial/>} />
         <Route path="/usuario" element={<Usuario/>} />
+        <Route path="/usuarionovo" element={<UsuarioNovo/>} />
+        <Route path="/usuarioeditar" element={<UsuarioEditar/>} />
         <Route path="/mensagem" element={<Mensagem/>} />
-
+        <Route path="/produto" element={<Produto/>} />
+        <Route path="/produtonovo" element={<ProdutoNovo/>} />
+        <Route path="/produtolista" element={<ProdutoLista/>} />
+        
+       
 
       </Routes>
     </div>

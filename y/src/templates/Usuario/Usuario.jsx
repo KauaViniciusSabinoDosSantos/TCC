@@ -9,7 +9,7 @@ const Usuario = () => {
         <div className="d-flex">
            <Sidebar />
            <div className="p-3 w-100">
-           <Header 
+           <Header
                     goto={'/home'}
                     title={'Usuário'}
 

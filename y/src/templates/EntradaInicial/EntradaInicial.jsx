@@ -24,7 +24,7 @@ const EntradaInicial = () => {
  
           <div className="container-body">
           <h1>Bem Vindo,  Adm!</h1>
-                    <Link to={'/login'} className="btn-login">LOGIN</Link>
+                    <Link to={'/login'} className="btn-login-entrada">LOGIN</Link>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur temporibus, similique ducimus dicta officiis odio harum suscipit at fuga ab obcaecati recusandae sapiente vel expedita possimus ullam libero praesentium.</p>
            
 
