@@ -16,10 +16,11 @@ export async function login(email, senha){
     let URL = `usuario/signin?email=${email}&senha=${senha}`;
     try{
         const response = await API.post(URL);
+        console.log(response);
         return response;
     }catch (error){
         console.log(error)
-        throw new Error('Erro ao fazer login');
+        throw new Error('Erro ao fazer login' + error);
     }
 }
  

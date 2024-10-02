@@ -9,8 +9,10 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit = async ()=>{
     login(email, senha).then(
+      console.log(email),
+      console.log(senha),
       console.log('FOI')
     ).catch((error) => {
       console.log(error)
@@ -25,7 +27,7 @@ const Login = () => {
         <img src={Logo} alt="" className="logo-login" />
 
         <div className="caixa">
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <h1 className='h1-L'>Login</h1>
             <div className='input-box'>
               <input type="email" placeholder='Email' required value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -37,7 +39,7 @@ const Login = () => {
             <div className='esqueceu-senha-L'>
               <Link to={'/forgotpass'}>Esqueceu a senha?</Link>
             </div>
-            <button type='submit' className="btn-login" onClick={handleSubmit} >ENTRAR</button>
+            <button type='submit' className="btn-login">ENTRAR</button>
           </form>
         </div>
       </div>
