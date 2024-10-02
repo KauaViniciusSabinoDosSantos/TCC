@@ -8,7 +8,7 @@ const Produto = () => {
     return (
         <div className="d-flex">
             <Sidebar />
-            <div className="p-3 w-100">
+            <div className="p-3 w-100 bg-dark text-light">
                 <Header
                     goto={'/home'}
                     title={'Produto'}
@@ -17,11 +17,11 @@ const Produto = () => {
                 <section className="m-2 p-2 shadow-lg">
                     <div className="d-flex justify-content-around">
                         <Link to={'/produtonovo'}
-                            className="btn btn-lg btn-primary">
+                            className="btn btn-lg bg-black text-light">
                             Novo Produto
                         </Link>
                         <Link to={'/produtoslista'}
-                            className="btn btn-lg btn-warning">
+                            className="btn btn-lg bg-info">
                             Lista de Produtos
                         </Link>
                     </div>

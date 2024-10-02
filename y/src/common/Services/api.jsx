@@ -7,6 +7,8 @@ const mainInstance = axios.create({
         "Content-Type": "application/json"
     }
 });
-const httpCommon = { mainInstance }
- 
-export default httpCommon;
+const API = { mainInstance }
+
+export default API;
+
+
