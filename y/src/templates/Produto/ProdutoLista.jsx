@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
-import Header from "../../Components/Header/Header"
-import Sidebar from '../../Components/Menu/Sidebar'
+import Header from "../../Components/Header/Header.jsx"
+import Sidebar from "../../Components/Menu/Sidebar.jsx"
 import logo from '../../assets/logo.png'
 
 const ProdutosLista = () => {

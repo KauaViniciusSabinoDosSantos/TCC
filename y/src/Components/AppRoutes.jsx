@@ -13,6 +13,8 @@ import ProdutoNovo from '../templates/Produto/ProdutoNovo'
 import ProdutoLista from '../templates/Produto/ProdutoLista'
 import UsuarioEditar from '../templates/Usuario/UsuarioEditar'
 import UsuarioNovo from '../templates/Usuario/UsuarioNovo'
+import UsuariosLista from '../templates/Usuario/UsuariosLista'
+import ProdutoEditar from '../templates/Produto/ProdutoEditar'
 
 
 
@@ -31,10 +33,12 @@ const AppRoutes = () => {
         <Route path="/usuario" element={<Usuario/>} />
         <Route path="/usuarionovo" element={<UsuarioNovo/>} />
         <Route path="/usuarioeditar" element={<UsuarioEditar/>} />
+        <Route path="/usuarioslista" element={<UsuariosLista/>} />
         <Route path="/mensagem" element={<Mensagem/>} />
         <Route path="/produto" element={<Produto/>} />
         <Route path="/produtonovo" element={<ProdutoNovo/>} />
-        <Route path="/produtolista" element={<ProdutoLista/>} />
+        <Route path="/produtoslista" element={<ProdutoLista/>} />
+        <Route path="/produtoeditar" element={<ProdutoEditar/>} />
         
        
 

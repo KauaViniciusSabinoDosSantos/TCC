@@ -12,6 +12,7 @@ const Mensagem = () => {
         navigate('/mensagemler')
     }
     const [mensagens, setMensagens] = useState([]);
+
     useEffect(() => {
         MensagemService.findAll().then(
             (response) => {
@@ -22,7 +23,7 @@ const Mensagem = () => {
             console.log(error);
         })
     }, []);
-    
+   
     
     return (
         <div className="d-flex">

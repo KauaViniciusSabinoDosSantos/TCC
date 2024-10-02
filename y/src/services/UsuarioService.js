@@ -1,5 +1,5 @@
 import http from '../common/http-common';
-const API_URL = "login/";
+const API_URL = "usuario/";
 
 const findAll = () => {
     return http.mainInstance.get(API_URL + 'findAll');
@@ -33,7 +33,6 @@ const logout = () => {
     localStorage.removeItem("user");
 };
 
-//aparecer informação de perfil
 const getCurrentUser = () => {
     return JSON.parse(localStorage.getItem("user"));
 };
