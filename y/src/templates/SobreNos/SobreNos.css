@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .content {
+    margin: 0;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: url('../../assets/roxo.jpg');
+    overflow: hidden; /* Oculta o que está fora do contêiner */
+    position: relative; /* Para que os filhos sejam posicionados em relação a ele */
+  }
+  
+/*----------------------------------------------------*/
+
+.SobreEquipe {
+  font-size: 35px;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.texto{
+color: #fff;
+position: absolute;
+top: 20%;
+left: 5%;
+font-size: 20px;
+}
+
+.NossaEquipe{
+color: #fff;
+font-size: 24px;
+position: absolute;
+top: 10%;
+left: 52%;
+}
+
+.membros{
+display: flex;
+align-items: center;
+position: absolute;
+top: 60%;
+left: 50%;
+}
+
+.foto1 {
+position: absolute; /* Para centralizar */
+top: 25%; /* Centraliza verticalmente */
+left: 37%; /* Centraliza horizontalmente */ 
+width: 240px; /* Altere o tamanho conforme necessário */
+height: 240px; /* Altere o tamanho conforme necessário */
+}
+
+.foto2 {
+position: absolute; /* Para centralizar */
+top: 25%; /* Centraliza verticalmente */
+left: 52%; /* Centraliza horizontalmente */
+width: 240px; /* Altere o tamanho conforme necessário */
+height: 240px; /* Altere o tamanho conforme necessário */
+}
+
+.foto3 {
+position: absolute; /* Para centralizar */
+top: 15%; /* Centraliza verticalmente */
+left: 60%; /* Centraliza horizontalmente */
+width: 500px; /* Altere o tamanho conforme necessário */
+height: 400px; /* Altere o tamanho conforme necessário */
+}
+
+.foto4 {
+position: absolute; /* Para centralizar */
+top: 50%; /* Centraliza verticalmente */
+left: 38%; /* Centraliza horizontalmente */
+width: 500px; /* Altere o tamanho conforme necessário */
+height: 400px; /* Altere o tamanho conforme necessário */
+}
+
+.foto5 {
+position: absolute; /* Para centralizar */
+top: 50%; /* Centraliza verticalmente */
+left: 53%; /* Centraliza horizontalmente */
+width: 500px; /* Altere o tamanho conforme necessário */
+height: 400px; /* Altere o tamanho conforme necessário */
+}
+
+.voltar  {
+background-color: #680d9c; /* Cor do botão ajustada */
+padding: 10px 20px; 
+text-decoration: none;
+color: #ffffff;
+border-radius: 10px;
+position: absolute; 
+top: 90%; 
+left: 5%;
+}
+
+.sobre1 {
+position: relative; 
+top: 470px; 
+left: 37%;
+color: #fff;
+font-size: 13px;
+align-items: center;
+}
+
+.sobre2 {
+position: absolute; 
+top: 51%; 
+left: 52%;
+color: #fff;
+font-size: 13px;
+align-items: center;
+}
+
+.sobre3 {
+position: absolute; 
+top: 51%; 
+left: 67%;
+color: #fff;
+font-size: 13px;
+align-items: center;
+}
+
+.sobre4 {
+position: absolute; 
+top: 800px; 
+left: 45%;
+color: #fff;
+font-size: 13px;
+align-items: center;
+}
+
+.sobre5 {
+position: absolute; 
+top: 800px; 
+left: 60%;
+color: #fff;
+font-size: 13px;
+align-items: center;
+}
+
+.logo {
+position: absolute; /* Ou relative, dependendo do seu layout */
+top: 50%; /* Move para o centro verticalmente */
+left: 50%; /* Move para o centro horizontalmente */
+transform: translate(830%, 30%); /* Centraliza a imagem */
+}
+
+.classe {
+color: #8C51D7;
+position: absolute; 
+top: 90%; 
+left: 85%;
+font-size: 30px;
+}

@@ -12,8 +12,9 @@ const Sidebar = () => {
 
             <nav className="nav flex-column">
                 <Link className="nav-link" to={'/mensagem'}>Mensagem</Link>
-                <Link className="nav-link" to={'/produto'}>Produto</Link>
+                <Link className="nav-link" to={'/equipamento'}>Equipamento</Link>
                 <Link className="nav-link" to={'/usuario'}>Usuário</Link>
+                <Link className="nav-link" to={'/sobrenosdois'}>Sobre Nós</Link>
             </nav>
         </div>
     )

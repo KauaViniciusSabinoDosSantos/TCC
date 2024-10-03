@@ -84,7 +84,7 @@ const Login = () => {
             </div>
 
             <div className='esqueceu-senha-L'>
-              <Link to={'/forgotpass'}>Esqueceu a senha?</Link>
+
             </div>
             <button type='submit' className="btn-login">ENTRAR</button>
           </form>

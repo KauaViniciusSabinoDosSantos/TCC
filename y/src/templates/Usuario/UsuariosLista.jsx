@@ -9,7 +9,7 @@ import UsuarioService from "../../services/UsuarioService"
 const UsuariosLista = () => {
     const navigate = useNavigate();
     const goTo = () => {
-        navigate('/usuarioler')
+        navigate('/usuarioeditar')
     }
     const [usuarios, setUsuarios] = useState([]);
     useEffect(() => {
@@ -41,8 +41,6 @@ const UsuariosLista = () => {
                                     <th scope="col">ID</th>
                                     <th scope="col">Nome</th>
                                     <th scope="col">Email</th>
-                                    <th scope="col">Acesso</th>
-                                    <th scope="col">Cadastro</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Abrir</th>
                                 </tr>
@@ -53,12 +51,10 @@ const UsuariosLista = () => {
                                     <td scope="row">{usuario.id}</td>
                                     <td>{usuario.nome}</td>
                                     <td>{usuario.email}</td>
-                                    <td>{usuario.nivelAcesso}</td>
-                                    <td>{usuario.dataCadastro}</td>
                                     <td>{usuario.statusUsuario}</td>
                                     <td>
-                                        <button type="button"
-                                                className="btn btn-sm btn-warning">
+                                    <button type="button" onClick={() => goTo()}
+                                            className="btn btn-sm btn-warning">
                                             <i className="bi bi-envelope-open me-2"></i>Abrir
                                         </button>
                                     </td>

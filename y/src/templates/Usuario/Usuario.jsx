@@ -16,12 +16,8 @@ const Usuario = () => {
                     />
                <section className="m-2 p-2 shadow-lg">
                     <div className="d-flex justify-content-around">
-                        <Link to={'/usuarionovo'} 
-                            className="btn btn-lg btn-primary">
-                            Novo Usuário
-                        </Link>
                         <Link to={'/usuarioslista'} 
-                            className="btn btn-lg btn-warning">
+                            className="btn btn-lg bg-info">
                             Lista de Usuários
                         </Link>
                     </div>

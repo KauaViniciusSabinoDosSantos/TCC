@@ -1,88 +1,118 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .content {
-    margin: 0;
-    display: block;
-    height: 100vh;
-    width: 100%;
-    background: url('../../assets/roxo.jpg');
+  margin: 0;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background: url('../../assets/roxo.jpg');
+  overflow: hidden; /* Oculta o que está fora do contêiner */
+  position: relative; /* Para que os filhos sejam posicionados em relação a ele */
+}
+/*----------------------------------------------------*/
+.container-header {
+  background-color: rgba(192, 182, 206, 0);
+  overflow: hidden;
 }
 
-.container-header {
-    background-color: rgba(19, 1, 43, 0);
-    overflow: hidden;
-  }
-
 .navbar-E {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 5rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
 
-  .logo-E{
-    display: flex;
-    align-items: center;
-  }
+.logo-E{
+  display: flex;
+  align-items: center;
+}
 
-  .logo-E h1{
-    color: white;
-  }
+.logo-E h1{
+  color: white;
+}
 
-  .logostyle-E{
-    width: 150px;
-    height: 100px;
-  }
+.logostyle-E{
+  position: absolute; /* Para centralizar */
+  top: 10%; /* Centraliza verticalmente */
+  left: 1105px; /* Centraliza horizontalmente */
+}
 
-  .navlist-E{
-    display: flex;
-    align-items: center;
-  }
+.navlist-E{
+  display: flex;
+  align-items: center;
+}
 
-  .navlist-E ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
+.navlist-E ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
 
-  .navlink-E{
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-  }
+.navlink-E{
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
 
-  .navlink-E:hover{
-    color: #7d019c;
-    transition: 0.5s;
-  }
-  
-  .container-body{
-    font-size: 20px;
-    color: white;
-    text-align: center;
-  }
+.navlink-E:hover{
+  color: #7d019c;
+  transition: 0.5s;
+}
 
-  .btn-login-entrada{
-    background-color: #7d019c;
-    padding: 10px;
-    border: 1px solid white;
-    text-decoration: none;
-    color: white;
-    border-radius: 10px;
-  }
-  .container-body h1{
-    font-size: 50px;
-    height: 100px;
-  }
-  .container-body p{
-    font-size: 20px;
-    
-  }
-  
-  
+.container-body{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.btn-login-entrada {
+  background-color: #680d9c; /* Cor do botão ajustada */
+  padding: 15px 150px; 
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 10px;
+  position: absolute; 
+  top: 46%; 
+  left: 785px; 
+}
 
 
+.container-body h1{
+  font-size: 50px;
+  height: 100px;
+}
+.container-body p{
+  font-size: 20px;
+ 
+}
+
+/*-------------------------------------------------*/
+
+.circle {
+  width: 1500px; /* Altere o tamanho conforme necessário */
+  height: 1500px; /* Altere o tamanho conforme necessário */
+  background-color: #8C51D7; /* Cor roxa com transparência */
+  border-radius: 50%; /* Faz o elemento ficar redondo */
+  position: absolute; /* Para centralizar */
+  top: -25%; /* Centraliza verticalmente */
+  left: -30%; /* Centraliza horizontalmente */
+}
+
+.textoIntro {
+  color: white;
+  position: absolute; /* Para centralizar */
+  top: 50%; /* Centraliza verticalmente */
+  left: 58%; /* Centraliza horizontalmente */
+  font-size: 24px;
+}
+
+.bemVindoADM {
+  color: white;
+  position: absolute; /* Para centralizar */
+  top: 40%; /* Centraliza verticalmente */
+  left: 848px; /* Centraliza horizontalmente */
+}
 

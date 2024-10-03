@@ -18,6 +18,7 @@ const Mensagem = () => {
             (response) => {
                 const mensagens = response.data;
                 setMensagens(mensagens);
+                console.log(mensagens);
             }
         ).catch((error) => {
             console.log(error);
@@ -51,8 +52,8 @@ const Mensagem = () => {
                                 {mensagens?.map((mensagem) => (
                                 <tr key={mensagem.id}>
                                     <td scope="row">{mensagem.id}</td>
-                                    <td>{mensagem.dataMensagem}</td>
-                                    <td>{mensagem.emissorMensagem}</td>
+                                    <td>{mensagem.Data_Mensagem}</td>
+                                    <td>{mensagem.emissor}</td>
                                     <td>{mensagem.email}</td>
                                     <td>{mensagem.statusMensagem}</td>
                                     <td>
