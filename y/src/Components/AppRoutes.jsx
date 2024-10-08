@@ -14,6 +14,7 @@ import EquipamentoNovo from '../templates/Equipamento/EquipamentoNovo'
 import EquipamentoLista from '../templates/Equipamento/EquipamentoLista'
 import SobreNos from '../templates/SobreNos/SobreNos'
 import SobreNosDois from '../templates/SobreNos/SobreNosDois'
+import MensagemLer from '../templates/Mensagem/MensagemLer'
 
 
 
@@ -33,6 +34,7 @@ const AppRoutes = () => {
         <Route path="/usuarioeditar" element={<UsuarioEditar/>} />
         <Route path="/usuarioslista" element={<UsuariosLista/>} />
         <Route path="/mensagem" element={<Mensagem/>} />
+        <Route path="/mensagemler" element={<MensagemLer/>} />
         <Route path="/equipamento" element={<Equipamento/>} />
         <Route path="/equipamentonovo" element={<EquipamentoNovo/>} />
         <Route path="/equipamentolista" element={<EquipamentoLista/>} />

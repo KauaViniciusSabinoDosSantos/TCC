@@ -28,6 +28,8 @@ const EquipamentoLista = () => {
     }, []);
 
 
+    
+
     const inativar = (id) => {
         EquipamentoService.inativar(id).then(
             (response) => {
@@ -41,6 +43,8 @@ const EquipamentoLista = () => {
         )
     }
 
+
+
     const ativar = (id) => {
         EquipamentoService.ativar(id).then(
             (response) => {
@@ -53,6 +57,8 @@ const EquipamentoLista = () => {
             }
         )
     }
+
+
 
 
     return (

@@ -23,4 +23,15 @@ export async function login(email, senha){
         throw new Error('Erro ao fazer login' + error);
     }
 }
- 
+
+export async function criarEquipamento(body){
+    let URL = "equipamento/create";
+    try{
+        const response = await API.post(URL, body);
+        console.log(response.data);
+        return response.data;
+    }catch (error){
+        console.log(error)
+        throw new Error('Nao foi');
+    }
+}

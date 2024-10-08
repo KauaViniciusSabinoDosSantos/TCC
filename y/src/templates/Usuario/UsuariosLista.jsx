@@ -40,7 +40,13 @@ const UsuariosLista = () => {
                                 <tr>
                                     <th scope="col">ID</th>
                                     <th scope="col">Nome</th>
+                                    <th scope="col">Data_Nascimento</th>
+                                    <th scope="col">Telefone</th>
                                     <th scope="col">Email</th>
+                                    <th scope="col">Senha</th>
+                                    <th scope="col">CPF</th>
+                                    <th scope="col">Torre</th>
+                                    <th scope="col">Apartamento</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Abrir</th>
                                 </tr>
@@ -50,12 +56,24 @@ const UsuariosLista = () => {
                                 <tr key={usuario.id}>
                                     <td scope="row">{usuario.id}</td>
                                     <td>{usuario.nome}</td>
+                                    <td>{usuario.Data_Nascimento}</td>
+                                    <td>{usuario.telefone}</td>
                                     <td>{usuario.email}</td>
+                                    <td>{usuario.senha}</td>
+                                    <td>{usuario.cpf}</td>
+                                    <td>{usuario.torre}</td>
+                                    <td>{usuario.apartamento}</td>
                                     <td>{usuario.statusUsuario}</td>
                                     <td>
                                     <button type="button" onClick={() => goTo()}
                                             className="btn btn-sm btn-warning">
                                             <i className="bi bi-envelope-open me-2"></i>Abrir
+                                        </button>
+                                    </td>
+                                    <td>
+                                    <button type="button" onClick={() => inativar(equipamento.id)}
+                                            className="btn btn-sm btn-danger">
+                                            <i className="bi bi-envelope-open me-2"></i>Apagar
                                         </button>
                                     </td>
                                 </tr>

@@ -9,7 +9,7 @@ import MensagemService from "../../services/MensagemService"
 const Mensagem = () => {
     const navigate = useNavigate();
     const goTo = () => {
-        navigate('/mensagemler')
+        navigate('/mensagemler')    
     }
     const [mensagens, setMensagens] = useState([]);
 
@@ -57,8 +57,8 @@ const Mensagem = () => {
                                     <td>{mensagem.email}</td>
                                     <td>{mensagem.statusMensagem}</td>
                                     <td>
-                                        <button type="button"
-                                                className="btn btn-sm btn-warning">
+                                    <button type="button" onClick={() => goTo()}
+                                            className="btn btn-sm btn-warning">
                                             <i className="bi bi-envelope-open me-2"></i>Abrir
                                         </button>
                                     </td>

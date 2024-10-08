@@ -30,7 +30,7 @@ const UsuarioEditar = () => {
                         </div>
 
                         <div className="col-md-4">
-                            <label htmlFor="inputData" className="form-label">Data de Cadastro</label>
+                            <label htmlFor="inputData" className="form-label">Data de Nascimento</label>
                             <input type="text" className="form-control" id="inputData" readOnly />
                         </div>
                         <div className="col-md-4">
