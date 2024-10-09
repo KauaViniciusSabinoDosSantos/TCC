@@ -49,7 +49,7 @@ public class EquipamentoController {
 		return new ResponseEntity<Equipamento>(_equipamento, HttpStatus.OK);
 	}
 
-	@PutMapping("reativar/{id}")
+	@PutMapping("ativar/{id}")
 	public ResponseEntity<Equipamento> reativar(@PathVariable long id) {
 
 		Equipamento _equipamento = equipamentoService.reativar(id);

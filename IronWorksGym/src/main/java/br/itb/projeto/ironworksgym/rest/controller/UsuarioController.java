@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.itb.projeto.ironworksgym.model.entity.Usuario;
+import br.itb.projeto.ironworksgym.rest.exception.ResourceNotFoundException;
+import br.itb.projeto.ironworksgym.rest.response.MessageResponse;
 import br.itb.projeto.ironworksgym.service.UsuarioService;
 
 @RestController
@@ -46,29 +48,42 @@ public class UsuarioController {
 
 	@GetMapping("findByEmail/")
 	public ResponseEntity<Usuario> findByEmail(@RequestParam String email) {
-
+ 
 		Usuario usuario = usuarioService.findByEmail(email);
-
-		return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
-	}
-
-	@PostMapping("create")
-	public ResponseEntity<Usuario> create(@RequestBody Usuario usuario) {
-
-		Usuario _usuario = usuarioService.create(usuario);
-
-		return new ResponseEntity<Usuario>(_usuario, HttpStatus.OK);
-	}
-
-	@PostMapping("signin")
-	public ResponseEntity<?> signin(@RequestParam String email, @RequestParam String senha) {
-
-		Usuario usuario = usuarioService.signin(email, senha);
+ 
 		if (usuario != null) {
-			return ResponseEntity.ok().body(usuario);
+			return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
+		} else {
+			throw new ResourceNotFoundException("*** Usuário não encontrado! *** " + "E-mail: " + email);
 		}
-		return ResponseEntity.badRequest().body("Dados incorretos!");
+ 
 	}
+ 
+	@PostMapping("create")
+	public ResponseEntity<?> create(@RequestBody Usuario usuario) {
+ 
+		Usuario _usuario = usuarioService.create(usuario);
+ 
+		if (_usuario == null) {
+			System.out.println("_usuario 2" + _usuario);
+			return ResponseEntity.badRequest().body(new MessageResponse("Usuário já cadastrado!"));
+		}
+		return ResponseEntity.ok().body(new MessageResponse("Usuário cadastrado com sucesso!"));
+	}
+	
+	@PostMapping("/signin")
+	public ResponseEntity<?> signin(@RequestBody Usuario usuario) {
+
+		Usuario _usuario = usuarioService
+				.signin(usuario.getEmail(), usuario.getSenha());
+
+		if (_usuario == null) {
+			throw new ResourceNotFoundException("*** Dados Incorretos! *** ");
+		}
+
+		return ResponseEntity.ok(_usuario);
+	}
+
 
 	@PutMapping("alterarSenha/{id}")
 	public ResponseEntity<Usuario> alterarSenha(@PathVariable long id, @RequestBody Usuario usuario) {
@@ -79,11 +94,12 @@ public class UsuarioController {
 	}
 
 	@PutMapping("alterar/{id}")
-	public ResponseEntity<Usuario> alterar(@PathVariable long id, @RequestBody Usuario usuario) {
+	public ResponseEntity<?> alterar(@PathVariable long id, @RequestBody Usuario usuario) {
 
 		Usuario _usuario = usuarioService.alterar(id, usuario);
 
-		return new ResponseEntity<Usuario>(_usuario, HttpStatus.OK);
+		return ResponseEntity.ok()
+				.body(new MessageResponse("Usuário: " + _usuario.getEmail() + " alterado com sucesso!"));
 	}
 
 

@@ -17,68 +17,67 @@ public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long ID;
-	private String Nome;
+	@Column(name="ID")
+	private long id;
+	
+	@Column(name="Nome")
+	private String nome;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
-	private LocalDate Data_Nascimento;
-	private String Telefone;
-
-	@Column(name = "Email")
+	@Column(name="Data_Nascimento")
+	private LocalDate dataNascimento;
+	
+	@Column(name="Telefone")
+	private String telefone;
+	
+	@Column(name="Email")
 	private String email;
-	private String Senha;
-	private String CPF;
-	private String Torre;
-	private String Apartamento;
-	private String StatusUsuario;
+	
+	@Column(name="Senha")
+	private String senha;
+	
+	@Column(name="CPF")
+	private String cpf;
+	
+	@Column(name="Torre")
+	private String torre;
+	
+	@Column(name="Apartamento")
+	private String apartamento;
+	
+	@Column(name="StatusUsuario")
+	private String statusUsuario;
 
-	public Usuario() {
+	public long getId() {
+		return id;
 	}
 
-	public Usuario(long iD, String nome, LocalDate data_Nascimento, String telefone, String email, String senha,
-			String cPF, String torre, String apartamento) {
-		super();
-		ID = iD;
-		Nome = nome;
-		Data_Nascimento = data_Nascimento;
-		Telefone = telefone;
-		this.email = email;
-		Senha = senha;
-		CPF = cPF;
-		Torre = torre;
-		Apartamento = apartamento;
-	}
-
-	public long getID() {
-		return ID;
-	}
-
-	public void setID(long iD) {
-		ID = iD;
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 
-	public LocalDate getData_Nascimento() {
-		return Data_Nascimento;
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
 	}
 
-	public void setData_Nascimento(LocalDate data_Nascimento) {
-		Data_Nascimento = data_Nascimento;
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
 	public String getTelefone() {
-		return Telefone;
+		return telefone;
 	}
 
 	public void setTelefone(String telefone) {
-		Telefone = telefone;
+		this.telefone = telefone;
 	}
 
 	public String getEmail() {
@@ -90,43 +89,44 @@ public class Usuario {
 	}
 
 	public String getSenha() {
-		return Senha;
+		return senha;
 	}
 
 	public void setSenha(String senha) {
-		Senha = senha;
+		this.senha = senha;
 	}
 
-	public String getCPF() {
-		return CPF;
+	public String getCpf() {
+		return cpf;
 	}
 
-	public void setCPF(String cPF) {
-		CPF = cPF;
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 
 	public String getTorre() {
-		return Torre;
+		return torre;
 	}
 
 	public void setTorre(String torre) {
-		Torre = torre;
+		this.torre = torre;
 	}
 
 	public String getApartamento() {
-		return Apartamento;
+		return apartamento;
 	}
 
 	public void setApartamento(String apartamento) {
-		Apartamento = apartamento;
+		this.apartamento = apartamento;
 	}
 
 	public String getStatusUsuario() {
-		return StatusUsuario;
+		return statusUsuario;
 	}
 
 	public void setStatusUsuario(String statusUsuario) {
-		StatusUsuario = statusUsuario;
+		this.statusUsuario = statusUsuario;
 	}
-
+	
+	
 }

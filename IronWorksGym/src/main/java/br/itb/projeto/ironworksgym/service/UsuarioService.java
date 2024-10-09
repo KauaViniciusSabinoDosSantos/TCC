@@ -98,6 +98,7 @@ public class UsuarioService {
 			usuarioAtualizado.setTelefone(usuario.getTelefone());
 			usuarioAtualizado.setTorre(usuario.getTorre());
 			usuarioAtualizado.setApartamento(usuario.getApartamento());
+			usuarioAtualizado.setDataNascimento(usuario.getDataNascimento());
 
 			return usuarioRepository.save(usuarioAtualizado);
 		}
@@ -116,12 +117,14 @@ public class UsuarioService {
 		}
 		return null;
 	}
+	
 
 	@Transactional
 	public Usuario reativar(long id) {
 		Optional<Usuario> _usuario = usuarioRepository.findById(id);
 
 		if (_usuario.isPresent()) {
+			
 			Usuario usuarioAtualizada = _usuario.get();
 			usuarioAtualizada.setStatusUsuario("ATIVO");
 
