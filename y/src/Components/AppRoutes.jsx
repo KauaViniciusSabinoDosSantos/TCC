@@ -18,9 +18,6 @@ import MensagemLer from '../templates/Mensagem/MensagemLer'
 
 
 
-
-
-
 const AppRoutes = () => {
   return (
     <div>
@@ -31,10 +28,10 @@ const AppRoutes = () => {
         <Route path="/inicio" element={<Inicio/>} />
         <Route path="/entradainicial" element={<EntradaInicial/>} />
         <Route path="/usuario" element={<Usuario/>} />
-        <Route path="/usuarioeditar" element={<UsuarioEditar/>} />
+        <Route path="/usuarioeditar/:id" element={<UsuarioEditar/>} />
         <Route path="/usuarioslista" element={<UsuariosLista/>} />
         <Route path="/mensagem" element={<Mensagem/>} />
-        <Route path="/mensagemler" element={<MensagemLer/>} />
+        <Route path="/mensagemler/:id" element={<MensagemLer/>} />
         <Route path="/equipamento" element={<Equipamento/>} />
         <Route path="/equipamentonovo" element={<EquipamentoNovo/>} />
         <Route path="/equipamentolista" element={<EquipamentoLista/>} />

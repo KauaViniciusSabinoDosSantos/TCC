@@ -8,16 +8,18 @@ import UsuarioService from "../../services/UsuarioService"
 
 const UsuariosLista = () => {
     const navigate = useNavigate();
-    const goTo = () => {
-        navigate('/usuarioeditar')
+
+    const goTo = (id) => {
+        navigate(`/usuarioeditar/${id}`)
+        
     }
+
     const [usuarios, setUsuarios] = useState([]);
     useEffect(() => {
         UsuarioService.findAll().then(
             (response) => {
                 const usuarios = response.data;
                 setUsuarios(usuarios);
-                console.log(usuarios);
             }
         ).catch((error) => {
             console.log(error);
@@ -56,7 +58,7 @@ const UsuariosLista = () => {
                                 <tr key={usuario.id}>
                                     <td scope="row">{usuario.id}</td>
                                     <td>{usuario.nome}</td>
-                                    <td>{usuario.Data_Nascimento}</td>
+                                    <td>{usuario.dataNascimento}</td>
                                     <td>{usuario.telefone}</td>
                                     <td>{usuario.email}</td>
                                     <td>{usuario.senha}</td>
@@ -65,15 +67,9 @@ const UsuariosLista = () => {
                                     <td>{usuario.apartamento}</td>
                                     <td>{usuario.statusUsuario}</td>
                                     <td>
-                                    <button type="button" onClick={() => goTo()}
+                                    <button type="button" onClick={() => goTo(usuario.id)}
                                             className="btn btn-sm btn-warning">
                                             <i className="bi bi-envelope-open me-2"></i>Abrir
-                                        </button>
-                                    </td>
-                                    <td>
-                                    <button type="button" onClick={() => inativar(equipamento.id)}
-                                            className="btn btn-sm btn-danger">
-                                            <i className="bi bi-envelope-open me-2"></i>Apagar
                                         </button>
                                     </td>
                                 </tr>

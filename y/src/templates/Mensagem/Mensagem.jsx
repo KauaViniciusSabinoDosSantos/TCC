@@ -8,8 +8,8 @@ import MensagemService from "../../services/MensagemService"
 
 const Mensagem = () => {
     const navigate = useNavigate();
-    const goTo = () => {
-        navigate('/mensagemler')    
+    const goTo = (id) => {
+        navigate(`/mensagemler/${id}`)    
     }
     const [mensagens, setMensagens] = useState([]);
 
@@ -29,7 +29,7 @@ const Mensagem = () => {
     return (
         <div className="d-flex">
             <Sidebar />
-            <div className="p-3 w-100">
+            <div className="p-3 w-100 bg-dark-subtle">
                 <Header
                     goto={'/home'}
                     title={'Mensagem'}
@@ -57,7 +57,7 @@ const Mensagem = () => {
                                     <td>{mensagem.email}</td>
                                     <td>{mensagem.statusMensagem}</td>
                                     <td>
-                                    <button type="button" onClick={() => goTo()}
+                                    <button type="button" onClick={() => goTo(mensagem.id)}
                                             className="btn btn-sm btn-warning">
                                             <i className="bi bi-envelope-open me-2"></i>Abrir
                                         </button>

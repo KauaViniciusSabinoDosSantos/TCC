@@ -54,6 +54,20 @@ const create = data => {
     return http.mainInstance.post(API_URL + "create", formData);
 };
 
+const alterar = (id, data) => {
+    const formData = new FormData();
+    formData.append('nome', data.nome);
+    formData.append('dataNascimento', data.dataNascimento);
+    formData.append('telefone', data.telefone);
+    formData.append('email', data.email);
+    formData.append('senha', data.senha);
+    formData.append('cpf', data.cpf);
+    formData.append('torre', data.torre);
+    formData.append('apartamento', data.apartamento);
+ 
+    return http.mainInstance.put(API_URL + `alterar/${id}`, formData);
+};
+
 const update = (id, data) => {
     return http.multipartInstance.put(API_URL + `update/${id}`, data);
 };
@@ -78,6 +92,7 @@ const UsuarioService = {
     logout,
     getCurrentUser,
     create,
+    alterar,
     update,
     alterarSenha,
     findByNome,
